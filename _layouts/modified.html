@@ -1,3 +1,29 @@
+<!-- 
+	
+	Modified the default layout file from
+	https://github.com/pages-themes/architect/blob/6286b8c174bfecc6d6af7e132170c44c0ee60e97/_layouts/default.html
+
+	Variables Used :
+	
+	site.title | default: site.github.repository_name
+	page.title | default: site.github.repository_name
+	site.description | default: site.github.project_tagline
+	site.has_custom_url
+	site.custom_repository_url
+	site.github.repository_url
+	site.github.owner_url
+	site.show_downloads
+	site.github.zip_url
+	site.github.tar_url
+	site.github.is_project_page
+	site.github.is_user_page
+	site.github.owner_name
+	site.google_analytics
+	site.stable_release_url | default: site.github.zip_url
+	site.latest_release_url | default: site.github.tar_url
+	
+-->
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -6,7 +32,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
-
+	<title> {{ site.title | default: site.github.repository_name }} : {{ page.title | default: site.github.repository_name }} </title>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -22,7 +48,11 @@
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
+		  {% if site.has_custom_url %}
+		    <a href="{{ site.custom_repository_url }}" class="button"><small>View project on</small> GitHub</a>
+		  {% else %}
+            <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
+		  {% endif %}
         {% endif %}
         {% if site.github.is_user_page %}
           <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
@@ -38,17 +68,17 @@
 
         <aside id="sidebar">
           {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="button">
+            <a href="{{ site.stable_release_url | default: site.github.zip_url }}" class="button">
               <small>Download</small>
-              .zip file
+              Stable
             </a>
-            <a href="{{ site.github.tar_url }}" class="button">
+            <a href="{{ site.latest_release_url | default: site.github.tar_url }}" class="button">
               <small>Download</small>
-              .tar.gz file
+              Latest
             </a>
           {% endif %}
-
-          {% if site.github.is_project_page %}
+		  
+		  {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
           {% endif %}
 
