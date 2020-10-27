@@ -1,3 +1,16 @@
+<!--
+
+Variables used
+	page.tier
+	page.has_subnav
+	site.data.navigation
+		- name
+		  link
+	site.data.subnav
+		- title
+		  - name
+		    link
+-->
 <nav>
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
