@@ -17,6 +17,9 @@
 	site.github.is_user_page
 	site.github.owner_name
 	site.google_analytics
+	site.show_downloads
+	site.download_url
+	site.download_name
 	
 -->
 
@@ -68,6 +71,12 @@
         </section>
 
         <aside id="sidebar">  
+		  {% if site.show_downloads %}
+            <a href="{{ site.download_url }}" class="button">
+              <small>Download</small>
+              {{ site.download_name }}
+            </a>
+		  {% endif %}
 		  {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
           {% endif %}
