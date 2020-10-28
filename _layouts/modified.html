@@ -98,11 +98,12 @@
         {% endif %}
       </div>
     </header>
-
+	
+	{% include navigation.html %}
+	
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-		  {% include navigation.html %}
           {{ content }}
         </section>
 
