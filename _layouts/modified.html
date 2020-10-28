@@ -20,6 +20,8 @@
 	site.show_downloads
 	site.download_url
 	site.download_name
+	site.download_docs_url
+	site.download_docs_name
 	
 -->
 
@@ -78,7 +80,7 @@
             </a>
 			<a href="{{ site.download_docs_url }}" class="button">
 			  <small>Documentation</small>
-			  {{ site.download_docs_documentation }}
+			  {{ site.download_docs_name }}
 			</a>
 		  {% endif %}
 		  {% if site.github.is_project_page %}
