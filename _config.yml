@@ -2,9 +2,10 @@ title: Enhance C++ Libraries
 description: Enhance C++ Libraries is a collection of multiple C++ libraries that cater to many needs.
 theme: jekyll-theme-architect
 has_custom_url: true
-custom_repository_url: https://github.com/harithmanoj/Enhance
+custom_repository_url: "https://github.com/harithmanoj/Enhance"
 show_downloads: true
 download_url: "https://github.com/harithmanoj/Enhance/releases/tag/v1.3.1.7"
 download_name: "Enhance C++ Libraries v1.3.1.7"
 download_docs_url: "/docs-v1.3.1.7/index.html"
 download_docs_name: "Documentation of Enhance C++ libraries v1.3.1.7"
+url: "https://harithmanoj.github.io/Enhance-cpp-libraries/"
