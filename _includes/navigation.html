@@ -1,7 +1,6 @@
 <!--
 
 Variables used
-	page.tier
 	page.has_subnav
 	site.data.navigation
 		- name
@@ -19,7 +18,7 @@ Variables used
   {% endfor %}
 </nav>
 
-{% if page.tier == 1 and page.has_subnav%}
+{% if page.has_subnav%}
   <nav>
     {% for list in site.data.subnav %}
       {% if list.title == page.title %}
