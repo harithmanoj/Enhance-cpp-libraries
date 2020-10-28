@@ -12,7 +12,7 @@ Variables used
 -->
 <nav>
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+    <a href="{{ site.url }}/{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
 	  {{ item.name }}
 	</a>
   {% endfor %}
@@ -23,7 +23,7 @@ Variables used
     {% for list in site.data.subnav %}
       {% if list.title == page.title %}
 	    {% for item in list.nav %}
-		  <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+		  <a href="{{ site.url }}/{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
 		    {{ item.name }} 
 		  </a>
 		{% endfor %}
