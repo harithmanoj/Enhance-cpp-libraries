@@ -7,44 +7,13 @@
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/harithmanoj/enhance-develop?label=develop%20alpha%20release)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/harithmanoj/Enhance/Test)
 
-Enhance C++ Libraries is a collection of multiple `C++` libraries that cater 
-to many needs.
+This repository is the source for the website of Enhance C++ Libraries.
 
-Including but not limited to :
-
-* Diagnostics.
-* Time and related tracking and synchronisation.
-* Date Time manipulation
-* Error Tracking.
-* Version info to be used inside programs.
-* Concurrent execution.
-
-The Library requires `C++ standard 17` to compile.
-
-The Library is released under [Apache License](https://github.com/harithmanoj/Enhance/blob/master/License.md)
-
-Source code is Hosted in [GitHub](https://github.com/harithmanoj/Enhance)
-
-Stable Releases can be found [here](https://github.com/harithmanoj/Enhance/releases)
-
-Code Documentation is Hosted by GitHub Pages [here](https://harithmanoj.github.io/Enhance/index.html)
-
-The branch master of Enhance repository contains last stable release code. For latest features, 
-bugfixes etc, see develop branch or [enhance-develop](https://github.com/harithmanoj/enhance-develop).
-
-Documentation of Latest bug fixes and features can be found [here](https://harithmanoj.github.io/enhance-develop/index.html)
-
-Develop Release v1.3.2.8.d1 alpha
-
-Stable Release v1.3.1.7
+v0.0.1
 
 ## Contribution
 
-Code contribution is welcome. Refer [Contributing.md]
-(https://github.com/harithmanoj/Enhance/blob/master/Contributing.md) 
-for ways to contribute.
-
-
+Code contribution is welcome. But all pull requests may not be accepted.
 
 ## AUTHOR
 
