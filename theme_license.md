@@ -1,6 +1,5 @@
 ---
 title: Theme and Layouts License
-layout: modified
 filename: theme_license
 has_subnav: false
 
