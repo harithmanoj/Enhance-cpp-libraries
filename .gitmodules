@@ -4,3 +4,6 @@
 [submodule "enhance-docs"]
 	path = enhance-docs
 	url = https://github.com/harithmanoj/enhance-docs.git
+[submodule "downloads"]
+	path = downloads
+	url = https://github.com/harithmanoj/enhance-archive.git
