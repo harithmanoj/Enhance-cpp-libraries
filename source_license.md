@@ -16,7 +16,7 @@ Files in folders:
 - _layouts
 - _includes 
 
-are released under [CC Zero]({{ site.url }}{% link _layouts/theme_license.md %})
+are released under [CC Zero]({{ site.url }}{% link theme_license.md %})
 
 Files in folders:
 

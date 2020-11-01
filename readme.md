@@ -24,7 +24,7 @@ Files in folders:
 - _layouts
 - _includes 
 
-are released under [CC Zero](_layouts/theme_license.md)
+are released under [CC Zero](theme_license.md)
 
 Files in folders:
 
