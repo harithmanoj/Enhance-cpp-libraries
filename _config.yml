@@ -13,5 +13,4 @@ url: "https://harithmanoj.github.io/Enhance-cpp-libraries"
 collections:
   nav:
     output: true
-    layout: modified
     

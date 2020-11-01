@@ -1,6 +1,7 @@
 ---
 title: About
 filename: about
+layout: modified
 has_subnav: false
 ---
 
