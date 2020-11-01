@@ -12,23 +12,14 @@ Variables used
 		    link
 -->
 <ul class="horiznav">
-  {% for item in site.data.navigation %}
-    <li class="li_horiznav"><a {% if page.url == item.link %}class="active_horiznav"{% endif %} href="{{ site.url }}{{ item.link }}">
-	  {{ item.name }}
+  
+  <li class="li_horiznav"><a {% if page.url == "/" %}class="active_horiznav"{% endif %} href="{{ site.url }}/">
+    Home
+  </a></li>
+  
+  {% for item in site.nav %}
+    <li class="li_horiznav"><a {% if page.url == item.url %}class="active_horiznav"{% endif %} href="{{ site.url }}{{ item.url }}">
+	  {{ item.title }}
 	</a></li>
   {% endfor %}
 </ul>
-
-{% if page.has_subnav%}
-  <nav>
-    {% for list in site.data.subnav %}
-      {% if list.title == page.title %}
-	    {% for item in list.nav %}
-		  <a href="{{ site.url }}{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
-		    {{ item.name }} 
-		  </a>
-		{% endfor %}
-	  {% endif %}
-	{% endfor %}
-  </nav>
-{% endif %}
