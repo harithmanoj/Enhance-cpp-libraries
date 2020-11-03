@@ -5,7 +5,7 @@ filename: enhance-licensing
 has_subnav: false
 ---
 
-## LICENSE
+# LICENSE
 
 The Enhance C++ Libraries is licensed under [Apache v2](https://github.com/harithmanoj/Enhance/blob/master/License) License
 
@@ -15,7 +15,9 @@ All source code is licensed under Apache License v2. The license is reproduced v
 
 
 ## Apache License
+
 ### Version 2.0, January 2004
+
 ### <http://www.apache.org/licenses/>
 
 ### TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
