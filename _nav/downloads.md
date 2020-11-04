@@ -3,6 +3,7 @@ title: Downloads
 filename: downloads
 layout: modified
 has_subnav: true
+subnav_coll: site.subnav-downloads
 ---
 
 # Downloads

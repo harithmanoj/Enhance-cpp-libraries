@@ -13,13 +13,43 @@ Variables used
 -->
 <ul class="horiznav">
   
-  <li class="li_horiznav"><a {% if page.url == "/" %}class="active_horiznav"{% endif %} href="{{ site.url }}/">
+  <li class="li_horiznav">
+  <a 
+    {% if page.url == "/" %}
+	  class="active_horiznav"
+	{% endif %}
+	href="{{ site.url }}/">
     Home
   </a></li>
   
   {% for item in site.nav %}
-    <li class="li_horiznav"><a {% if page.url == item.url %}class="active_horiznav"{% endif %} href="{{ site.url }}{{ item.url }}">
+    <li class="li_horiznav">
+	<a 
+	  {% if page.url == item.url %}
+	    class="active_horiznav"
+	  {% elif page.is_subnav %}
+	    {% if page.url == page.supernav %}
+		  class="active_horiznav"
+		{% endif %}
+	  {% endif %} 
+	  href="{{ site.url }}{{ item.url }}">
 	  {{ item.title }}
 	</a></li>
   {% endfor %}
+  
+</ul>
+
+<ul class="horiznav">
+  
+  {% for item in page.subnav_coll %}
+    <li class="li_horiznav">
+	<a 
+	  {% if page.url == item.url %}
+	    class="active_horiznav"
+	  {% endif %} 
+	  href="{{ site.url }}{{ item.url }}">
+	  {{ item.title }}
+	</a></li>
+  {% endfor %}
+  
 </ul>
