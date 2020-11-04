@@ -41,7 +41,7 @@ Variables used
 
 <ul class="horiznav">
   
-  {% for item in page.subnav_coll %}
+  {% for item in site.[page.subnav_coll] %}
     <li class="li_horiznav">
 	<a 
 	  {% if page.url == item.url %}
