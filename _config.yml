@@ -19,4 +19,3 @@ collections:
     output: true
   subnav-docs:
     output: true
-    permalink: /enhance-docs/docs-:name/index.html
