@@ -19,3 +19,5 @@ collections:
     output: true
   subnav-docs:
     output: true
+  subnav-feature:
+    output: true
