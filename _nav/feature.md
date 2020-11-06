@@ -3,6 +3,6 @@
   filename: feature
   has_subnav: true
   subnav_coll: subnav-docs
-  redirect:   /enhance-docs/docs-v1.0.0.1/index.html
+  redirect:   /subnav-feature/v1.3.1.7.html
   layout:     redirect
 ---
