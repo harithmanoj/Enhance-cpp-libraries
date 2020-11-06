@@ -9,7 +9,7 @@
 
 This repository is the source for the website of Enhance C++ Libraries.
 
-v0.0.35
+v1.0.36
 
 ---
 
