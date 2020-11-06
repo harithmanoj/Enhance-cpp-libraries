@@ -11,12 +11,12 @@ Variables used
 		  - name
 		    link
 -->
-<ul class="horiznav">
+<ul class="nav">
   
-  <li class="li_horiznav">
+  <li class="li_horiznav li_horiznav_first">
   <a 
     {% if page.url == "/" %}
-	  class="active_horiznav"
+	  class="active_nav"
 	{% endif %}
 	href="{{ site.url }}/">
     Home
@@ -26,10 +26,10 @@ Variables used
     <li class="li_horiznav">
 	<a 
 	  {% if page.url == item.url %}
-	    class="active_horiznav"
+	    class="active_nav"
 	  {% elsif page.is_subnav %}
 	    {% if item.url == page.supernav %}
-		  class="active_horiznav"
+		  class="active_nav"
 		{% endif %}
 	  {% endif %} 
 	  href="{{ site.url }}{{ item.url }}">
@@ -39,13 +39,13 @@ Variables used
   
 </ul>
 
-<ul class="horiznav">
+<ul class="nav vertnav">
   
   {% for item in site.[page.subnav_coll] %}
-    <li class="li_horiznav">
+    <li>
 	<a 
 	  {% if page.url == item.url %}
-	    class="active_horiznav"
+	    class="active_nav"
 	  {% endif %} 
 	  href="{{ site.url }}{{ item.url }}">
 	  {{ item.title }}
