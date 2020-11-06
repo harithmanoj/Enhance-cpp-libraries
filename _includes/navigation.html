@@ -28,7 +28,7 @@ Variables used
 	  {% if page.url == item.url %}
 	    class="active_horiznav"
 	  {% elsif page.is_subnav %}
-	    {% if page.url == page.supernav %}
+	    {% if item.url == page.supernav %}
 		  class="active_horiznav"
 		{% endif %}
 	  {% endif %} 
