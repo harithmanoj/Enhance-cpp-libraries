@@ -42,25 +42,31 @@
 
     
     <style>
-	  ul.horiznav {
+	  
+      ul.nav {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #2879d0;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
         top: 0;
       }
 
       li.li_horiznav {
         float: left;
       }
-
-      li a {
+	  
+	  li.li_horiznav_first {
+        margin-left: 400px
+      }
+      
+	  li a {
         display: block;
         color: white;
         text-align: center;
         padding: 14px 16px;
-        background-color: #2879d0;
 		text-decoration: none;
       }
 
@@ -69,7 +75,7 @@
 		color: white;
       }
 
-      .active_horiznav {
+      .active_nav {
         background-color: #3CC2D8;
 		color: white;
       }
