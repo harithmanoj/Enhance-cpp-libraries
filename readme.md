@@ -28,7 +28,6 @@ are released under [CC Zero](theme_license.md)
 
 Files in folders:
 
-- _data
 - docs-v1.0.0.1
 - docs-v1.1.0.2
 - docs-v1.2.0.3
